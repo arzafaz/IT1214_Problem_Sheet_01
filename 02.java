@@ -77,7 +77,7 @@ class ParkingLot {
     }
 }
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         ParkingLot parkingLot = new ParkingLot();
         
