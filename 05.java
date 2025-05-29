@@ -36,7 +36,7 @@ class Student {
     }
 }
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         try {
             Student student = new Student("John", 75, 110, 90);
