@@ -58,7 +58,6 @@ class ParkingLot {
             return;
         }
 
-        // Shift remaining vehicles
         for (int i = index; i < vehicleCount - 1; i++) {
             vehicles[i] = vehicles[i + 1];
         }
@@ -81,15 +80,15 @@ class Main {
     public static void main(String[] args) {
         ParkingLot parkingLot = new ParkingLot();
         
-        // Park vehicles
+    
         parkingLot.parkVehicle(new Vehicle("ABC123", "John Doe", 2));
         parkingLot.parkVehicle(new Vehicle("XYZ789", "Jane Smith", 4));
         parkingLot.parkVehicle(new Vehicle("LMN456", "Bob Brown", 1));
         
-        // Remove a vehicle
+    
         parkingLot.removeVehicle("XYZ789");
         
-        // Display all vehicles
+    
         parkingLot.displayAllVehicles();
     }
 }

@@ -62,7 +62,7 @@ class BookingSystem {
                 int seat = tickets[i].getSeatNumber();
                 seats[seat - 1] = false;
                 
-                // Shift remaining tickets
+                
                 for (int j = i; j < ticketCount - 1; j++) {
                     tickets[j] = tickets[j + 1];
                 }
@@ -90,18 +90,18 @@ class Main {
     public static void main(String[] args) {
         BookingSystem cinema = new BookingSystem();
         
-        // Book tickets
+        
         cinema.bookTicket(1, "Customer 1", 1);
         cinema.bookTicket(2, "Customer 2", 2);
         cinema.bookTicket(3, "Customer 3", 3);
         
-        // Cancel a ticket
+        
         cinema.cancelTicket(2);
         
-        // Book a new ticket in the freed seat
+        
         cinema.bookTicket(4, "Customer 4", 2);
         
-        // Display all bookings
+        
         cinema.displayAllBookings();
     }
 }
